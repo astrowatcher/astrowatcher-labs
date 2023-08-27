@@ -37,11 +37,16 @@
 	      <input class="form-check-input" type="checkbox" name="remember"> Remember me
 	    </label>
 	  </div>
-	  <button type="submit" class="btn btn-primary">Submit</button>
+	  <button type="submit" onclick=showKey() class="btn btn-primary">Submit</button>
 	</form>
     </div>
   </div>
 </div>
-
+<script>
+	function showKey()
+	{
+		var openai_api_key = process.env.OPENAI_API_KEY;
+	}
+</script>
 </body>
 </html>
